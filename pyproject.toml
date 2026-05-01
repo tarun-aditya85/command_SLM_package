@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "command-slm"
+version = "0.1.0"
+description = "AI-powered CLI for natural language to shell commands"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Lalitha M V"}
+]
+keywords = ["cli", "bash", "shell", "commands", "ai", "llm"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = [
+    "llama-cpp-python>=0.2.0",
+    "huggingface-hub>=0.20.0",
+    "rich>=13.0.0",
+    "prompt-toolkit>=3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+]
+
+[project.scripts]
+command-slm = "command_slm.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/lmv/command-slm"
+Documentation = "https://github.com/lmv/command-slm#readme"
+Repository = "https://github.com/lmv/command-slm"

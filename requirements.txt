@@ -1,0 +1,4 @@
+llama-cpp-python>=0.2.0
+huggingface-hub>=0.20.0
+rich>=13.0.0
+prompt-toolkit>=3.0.0
